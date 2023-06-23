@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PushTest</title>
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" defer></script>
+    <script>
+    window.OneSignal = window.OneSignal || [];
+    OneSignal.push(function() {
+        OneSignal.init({
+        appId: "ce1d234f-670e-4d48-8e4c-7f8510e69b70",
+        });
+    });
+    </script>
 </head>
 <body>
     <h1>PushTest</h1>
