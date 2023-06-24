@@ -7,10 +7,12 @@
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
     <script>
     window.OneSignal = window.OneSignal || [];
+    let externalUserId = "https://ysk-iszk.github.io/PushTest/";
     OneSignal.push(function() {
         OneSignal.init({
         appId: "ce1d234f-670e-4d48-8e4c-7f8510e69b70",
         });
+        OneSignal.setExternalUserId(externalUserId);
     });
     </script>
 </head>
